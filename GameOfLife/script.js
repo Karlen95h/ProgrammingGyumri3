@@ -138,3 +138,6 @@ function draw() {
         xotabuys.move();
     }
 }
+
+
+console.log("Shnorhavor amanor ev surb cnund");
