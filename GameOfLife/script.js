@@ -63,19 +63,19 @@ function setup() {
                 grassEaterArr.push(eater);
             }
             else if (matrix[y][x] == 3) {
-                let eater = new gishatich(x, y);
+                let eater = new Gishatich(x, y);
                 gishatichner.push(eater);
             }
             else if (matrix[y][x] == 4) {
-                let eater = new hrashagorc(x, y);
+                let eater = new Hrashagorc(x, y);
                 hrashagorcarr.push(eater);
             }
             else if (matrix[y][x] == 5) {
-                let eater = new vorsord(x, y);
+                let eater = new Vorsord(x, y);
                 vorsordarr.push(eater);
             }
             else if (matrix[y][x] == 6) {
-                let eater = new xotabuys(x, y);
+                let eater = new Xotabuys(x, y);
                 xotabuysarr.push(eater);
             }
         }
@@ -139,5 +139,3 @@ function draw() {
     }
 }
 
-
-console.log("Shnorhavor amanor ev surb cnund");
