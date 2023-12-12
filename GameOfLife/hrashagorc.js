@@ -1,4 +1,6 @@
-class Hrashagorc extends LivingCreature {
+let LivingCreature = require("./LivingCreature") 
+
+module.exports = class Hrashagorc extends LivingCreature {
     constructor(x, y) {
         super(x,y)
         this.directions = [];
@@ -24,7 +26,7 @@ class Hrashagorc extends LivingCreature {
 
     move() {
         let found = this.chooseCell(0);
-        let exact = random(found)
+        let exact = found[Math.floor(Math.random() * found.length)]
 
         if (exact) {
             let x = exact[0];
